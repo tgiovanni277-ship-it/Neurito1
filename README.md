@@ -6,8 +6,11 @@ Neurito es una demostración pequeña de una red neuronal que elige una acción 
 
 Con Python 3.12 o superior y `uv`:
 
+````bash
+
+```uv run python main.py
 ```bash
-uv run python main.py
+   uv run python main.py
 ```
 
 La interfaz del código está configurada en inglés (`LANGUAGE = "en"`). Para mostrarla en español, cambia ese valor a `"es"`.
@@ -101,4 +104,4 @@ La energía aumenta en la dirección opuesta al cansancio: mucha energía signif
 
 La precisión solo cuenta cuántos ejemplos coinciden con las etiquetas. Aquí tanto los ejemplos de entrenamiento como los de prueba se generan al azar y comparten la misma política sintética, así que `99.4%` indica que la red reproduce bastante bien esa regla artificial; no demuestra que entienda las necesidades reales de una mascota. Además, una precisión agregada puede ocultar errores en clases poco frecuentes o cerca de empates. Para evaluar un caso real harían falta datos representativos, etiquetas justificadas, métricas por clase y pruebas con datos separados de los usados para ajustar el modelo.
 
-
+````
